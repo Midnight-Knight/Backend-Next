@@ -1,18 +1,14 @@
-let doorOpen: boolean = true;
-let kg: number | null = null;
+import Default from "@/types/default";
 
-export function getDoorOpen(){
-    return doorOpen;
-}
+export type typeFood = number | Default;
 
-export function setDoorOpen(status: boolean){
-    doorOpen = status;
-}
+let kg: typeFood = "unknown";
+const fullCm: number = 10;
 
-export function getKg(): number | null {
+export function getKg(): typeFood {
     return kg;
 }
 
-export function setKg(value: number | null){
-    kg = value;
+export function setKg(cm: typeFood){
+    kg = cm;
 }
